@@ -1,0 +1,53 @@
+{
+    "apiVersion": "8.3.2.0",
+    "title": "Fusio",
+    "paymentCurrency": "EUR",
+    "categories": [
+        "authorization",
+        "backend",
+        "consumer",
+        "default",
+        "system"
+    ],
+    "scopes": [
+        "default"
+    ],
+    "links": [
+        {
+            "rel": "root",
+            "href": "https:\/\/demo.fusio-project.org\/"
+        },
+        {
+            "rel": "openapi",
+            "href": "https:\/\/demo.fusio-project.org\/system\/generator\/spec-openapi"
+        },
+        {
+            "rel": "typeapi",
+            "href": "https:\/\/demo.fusio-project.org\/system\/generator\/spec-typeapi"
+        },
+        {
+            "rel": "route",
+            "href": "https:\/\/demo.fusio-project.org\/system\/route"
+        },
+        {
+            "rel": "health",
+            "href": "https:\/\/demo.fusio-project.org\/system\/health"
+        },
+        {
+            "rel": "oauth-authorization-server",
+            "href": "https:\/\/demo.fusio-project.org\/system\/oauth-authorization-server"
+        },
+        {
+            "rel": "oauth2",
+            "href": "https:\/\/demo.fusio-project.org\/authorization\/token"
+        },
+        {
+            "rel": "whoami",
+            "href": "https:\/\/demo.fusio-project.org\/authorization\/whoami"
+        },
+        {
+            "rel": "about",
+            "href": "https:\/\/www.fusio-project.org"
+        }
+    ]
+}
