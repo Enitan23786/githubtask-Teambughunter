@@ -16,22 +16,8 @@
 							"listen": "test",
 							"script": {
 								"exec": [
-									"pm.test(\"Status code should be 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"pm.test(\"Status code name should have OK string\", function () {\r",
-									"    pm.response.to.have.status(\"OK\");\r",
-									"});"
-								],
-								"type": "text/javascript",
-								"packages": {}
-							}
-						},
-						{
-							"listen": "prerequest",
-							"script": {
-								"exec": [
-									""
+									"pm.collectionVariables.get(\"variable_key\");\r",
+									"pm.collectionVariables.get(\"variable_key\");"
 								],
 								"type": "text/javascript",
 								"packages": {}
@@ -68,7 +54,7 @@
 									"value": ""
 								},
 								{
-									"key": "",
+									"key": null,
 									"value": "2"
 								}
 							]
@@ -88,32 +74,9 @@
 							"listen": "test",
 							"script": {
 								"exec": [
-									"// Fixed syntax and semantic errors\r",
-									"pm.test(\"Status code should be 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"pm.test(\"confirm that title is Fusio\", function () {\r",
-									"    const jsonData = pm.response.json();\r",
-									"    pm.expect(jsonData.title).to.equal(\"Fusio\");\r",
-									"});\r",
-									"pm.test(\"confirm that paymentCurrency is EUR\", function () {\r",
-									"    const jsonData = pm.response.json();\r",
-									"    pm.expect(jsonData.paymentCurrency).to.equal(\"EUR\");\r",
-									"});\r",
-									"pm.test(\"Status code name should have OK string\", function () {\r",
-									"    pm.response.to.have.status(\"OK\");\r",
-									"});\r",
-									"pm.test(\"categories should include backend\", function () {\r",
-									"    const jsonData = pm.response.json();\r",
-									"    pm.expect(jsonData.categories).to.include(\"backend\");\r",
-									"});\r",
-									"\r",
-									"pm.test(\"categories\", function () {\r",
-									"    pm.expect(jsonData.categories).to.equal([\"authorization\", \"backend\", \"consumer\", \"default\", \"system\"]);\r",
-									"});"
+									""
 								],
-								"type": "text/javascript",
-								"packages": {}
+								"type": "text/javascript"
 							}
 						}
 					],
