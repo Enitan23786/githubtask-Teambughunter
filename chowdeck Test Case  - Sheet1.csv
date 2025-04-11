@@ -1,0 +1,511 @@
+"write a test case for ""shop for food "" feature on chowdeck ",,,, Google Chrome ,Cycle 1,Safari,Cycle 1,Microsoft Edge,Cycle 1,,,
+,,,,Total Test cases ,10,Total Test cases,10,Total Test cases ,10,,Criteria,
+,,,,Total Passed ,8,Total Passed ,8,Total Passed ,8,,Passed,
+,,,,Total Failed ,1,Total Failed ,1,Total Failed ,1,,Failed,
+,,,,Total Untested ,1,Total Untested ,1,Total Untested ,1,,Untested,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,Status ,,,,,
+Test suite ID,Test case ID ,Test description ,Test steps ,Test data ,Expected result ,Actual result ,Google chrome (PC) ,Safari (mobile) ,Microsoft Edge ,Comment ,Author ,Date created 
+Feature name : Shop for Food ,,,,,,,,,,,,
+shop for food 01 ,TC-01,verify that users can browse available food items ,"- open a web browser 
+ - visit chowdeck.com    
+ - click on the store link (the cart logo) or navigate to chowdeck.com/store        
+ -scroll through the list of available restaurants 
+ - click on a restaurant of choice. ","https://chowdeck.com/store
+chowdeck.com ",it should display available  food items with images   ,"It displayed the available food items with images, prices and description ",Passed,Passed,Passed,NONE ,Enitan Onagoruwa,12/02/2025
+Shop for food 02  ,TC-02,verify that food categories are displayed correctly ,"- open a web browser  
+ - visit  chowdeck.com 
+- click on the store link (the cart logo) or navigate to  chowdeck.com/store  
+-select a category ( e.g Fit Fam ) ","category selected : Fit Fam 
+chowdeck.com 
+chowdeck.com/store ","- only food from the selected category should be displayed 
+- category name should be displayed at the top ","only food from the selected category was displayed 
+and the category name was displayed at the top ",Passed,Passed,Passed,NONE ,Enitan Onagoruwa,12/03/2025
+Shop for food 03 ,TC-03,Verify that users can search for food items ,"- open a web browser  
+- visit  chowdeck.com 
+- click on the store link (the cart logo ) or navigate to chowdeck.com/store 
+-  click on the search bar 
+- type pizza 
+- press enter or tap on the search button / icon ","search keyword : pizza 
+chowdeck.com 
+chowdeck.com/store ","all food items related to pizza should be displayed 
+no unrelated items should appear in the result ",all food items related to pizza was displayed and no unrelated result ,Passed,Passed,Passed,NONE ,Enitan Onagoruwa,12/04/2025
+shop for food 04,TC-04,Verify that user can filter food by price ,"- open a web browser 
+- visit chowdeck.com 
+- click on the store link (the cart logo) or navigate to  chowdeck.com/store","chowdeck.com 
+chowdeck.com/store 
+",-,,Untested,Untested,Untested,There is no filter for food prices. ,Enitan Onagoruwa,12/05/2025
+Shop for food 05,TC-05,Verify food details page open correctly ,"- open a web browser 
+- visit chowdeck.com   
+- click on the store link (the cart logo) or navigate to  chowdeck.com/store 
+- click on a restaurant to display food items
+- click on a food item from the list .","http://chowdeck.com/ 
+http://chowdeck.com/store ","-the food details page should open
+- the page should display the food name , price , description, and ""add to cart "" button. ","The food details page opened successfully 
+ the page displayed the food name, price, description and add to cart button .",Passed,Passed,Passed,NONE ,Enitan Onagoruwa,12/06/2025
+Shop for food 06,TC-06,Verify food items have correct pricing ,"- open a web browser 
+- visit chowdeck.com 
+- click on the store link (the cart logo) or navigate to  chowdeck.com/store 
+- click on a restaurant ( item7go)  to display food menu 
+- click on a food item from the list . ( chicken )
+- check the price displayed 
+-add the item to cart and check the price in cart. 
+","http://chowdeck.com/ 
+http://chowdeck.com/store 
+selected restaurant : item7go 
+selected item : chicken ","The food price should  remains the same across all views ( shop page , details page and cart page ) ","The food price should  remains the same across all views ( shop page , details page and cart page )",Passed,Passed,Passed,NONE ,Enitan Onagoruwa,12/07/2025
+shop for food 07,TC-07,verify users can add food items to cart ,"-open a web browser 
+- visit chowdeck.com 
+-  click on the store link ( the cart logo ) or navigate to chowdeck.com/store 
+- click on restaurant to show food menu ( e.g so fresh ) 
+- click on food item to open detail page ( e.g chicken wrap)  
+- click on add to cart button 
+- open the cart page ","chowdeck.com 
+chowdeck.com/store 
+food item : chicken wrap  
+restaurant : so fresh ",The selected food item should appear in cart .,The selected food item ( chicken wrap appeared in cart ),Passed,Passed,Passed,NONE ,Enitan Onagoruwa,12/08/2025
+Shop for food 08 ,TC-08,verify out of stock items arent purchasable ,"- Open a web browser 
+- visit chowdeck.com 
+- click on the storelink ( the cart logo ) or navigate to chowdeck.com/store 
+- click on a restaurant to show food menu ( e.g item7g0 ) 
+- click on an out of stock food item (e.g shawarma ) 
+- try to add it to cart ","chowdeck.com 
+chowdeck.com/store 
+restaurant : item7go 
+food item : shawarma ","The system should display "" out of stock "" message
+user cannot add the item to the cart ","out of stock 
+The selected food item (shawarma) cannot  be added to cart ",Passed,Passed,Passed,NONE ,Enitan Onagoruwa,12/09/2025
+Shop for food 09,TC-09,verify food images load correctly ,"- Open a web browser 
+- visit chowdeck.com 
+- click on the store link ( the cart icon) or navigate to chowdeck.com/store 
+- click on a restaurant to show food menu 
+- browse through multiple food items 
+- check if the images are displayed correctly ","chowdeck.com 
+chowdeck.com/store ","Each food item should have a properly loaded image 
+No broken image links should appear ",Each food item image was properly displayed and no food image was made to represent what its not ,Passed,Passed,Passed,NONE ,Enitan Onagoruwa,12/10/2025
+Shop for food 10 ,TC-10,verify recommended items are shown ,"- Open a web browser 
+- visit chowdeck.com 
+- click on the store link ( the cart icon) or navigate to chowdeck.com/store 
+- click on a restaurant to show food menu  ( domino's )  
+-  click on the food item (pizza ) to open its details page 
+- scroll to the bottom of the page 
+-  check the ""recommended items"" section ","chowdeck.com 
+chowdeck.com/store 
+restaurant : domino's 
+food item : pizza ","The system should display related food items in the ""recommended items"" section  ",Recommended items was not deplayed at all ,Failed,Failed,Failed,There was not a place showing recommended items.,Enitan Onagoruwa,12/11/2025
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+"write a test case for "" food ordering feature""  on chowdeck. ",,,, Google Chrome ,,Safari,,Microsoft Edge,,,Criteria,
+,,,,Total Test cases ,10,Total Test cases,10,Total Test cases ,10,,Passed,
+,,,,Total Passed ,9,Total Passed ,9,Total Passed ,9,,Failed,
+,,,,Total Failed ,1,Total Failed ,1,Total Failed ,1,,Untested,
+,,,,Total Untested ,0,Total Untested ,0,Total Untested ,0,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+Test suite ID,Test case ID ,Test description ,Test steps ,Test data ,Expected result ,Actual result ,Google chrome ( PC ),Safari ( mobile ) ,microsoft edge ,Comment ,Author ,Date created 
+Feature name : food ordering feature ,,,,,,,,,,,,
+food ordering feature 01,TC-O1,Verify that users can place a food order successfully ,"- Open a web browser 
+- visit chowdeck.com 
+- click on the store link ( the cart icon) or navigate to chowdeck.com/store 
+- click on the profile icon 
+- click on the sign in button 
+- enter valid login credentials ( or sign up if not registered ) 
+- click on a restaurant to show available food menu 
+- click on a food item to select 
+- click ""add item to my order button"" 
+- choose payment method 
+- input delivery address
+- click on ""place order button "" ","chowdeck.com 
+chowdeck.com/store 
+phone number : 08072456688 
+restaurant : chicken republic
+food item : express combo 
+delivery address : acemall oluyole 
+payment method : bank transfer ","The user should be directed to the payment page and when payment has been successfully made the user will receive a confirmation message  "" order successfully placed ""  with details for tracking the order  ","The system directed me to the payment page after clicking the "" place order "" page 
+when payment was successfully made via bank transfer i got a confirmation message "" order successful "" 
+"" click here for tracking details """,Passed,Passed,Passed,none ,Onagoruwa Enitan ,13/02/2026
+Food ordering feature 02 ,TC-02,Verify user can remove an item from the cart before ordering ,"- Open a web browser 
+- visit chowdeck.com 
+- click on the store link ( the cart icon) or navigate to chowdeck.com/store 
+- click on the profile icon 
+- click on the sign in button 
+- enter valid login credentials ( or sign up if not registered ) 
+- click on a restaurant to show available food menu 
+- click on a food item to select 
+- click on add 1 item to my order 
+- go to cart and click on delete icon ( or remove button) to delete the order previously  added 
+","chowdeck.com 
+chowdeck.com/store 
+phone number : 08072456688 
+restaurant : chicken republic
+food item : express combo 
+",The item should be removed from cart ,The item was successfully removed from cart ,Passed,Passed,Passed,none ,Onagoruwa Enitan ,13/02/2025 
+food ordering feature 03 ,TC-03,verify user cannot place an order with an empty cart ,"- Open a web browser 
+- visit chowdeck.com 
+- click on the store link ( the cart icon) or navigate to chowdeck.com/store 
+- click on the profile icon 
+- click on the sign in button 
+- enter valid login credentials ( or sign up if not registered ) 
+- click on a restaurant to show available food menu 
+- click on a food item to select 
+- click on the minus button when theres only one unit in the order box to read zero 
+","chowdeck.com 
+chowdeck.com/store   
+phone number : 08072456688 
+restaurant : chicken republic
+food item : express combo 
+",The system should  prevent the user from proceeding with an empty cart ,"The system prevented the reduction from 1 to 0, to avoid having an empty cart ",Passed,Passed,Passed,none ,Onagoruwa Enitan ,13/02/2027
+food ordering feature 04 ,TC-04,verify different payment methods are available ,"- Open a web browser 
+- visit chowdeck.com 
+- click on the store link ( the cart icon) or navigate to chowdeck.com/store 
+- click on the profile icon 
+- click on the sign in button 
+- enter valid login credentials ( or sign up if not registered ) 
+- click on a restaurant to show available food menu 
+- click on a food item to select 
+- click ""add item to my order button"" 
+- click choose payment method 
+
+","chowdeck.com 
+chowdeck.com/store   
+phone number : 08072456688 
+restaurant : chicken republic
+food item : express combo 
+",The system should display multiple payment  options ,"The system showed different payment methods 
+. pay with card 
+. pay with bank transfer 
+. pay with bank 
+. pay with ussd  
+. pay with QR code ",Passed,Passed,Passed,none ,Onagoruwa Enitan ,13/02/2028
+food ordering feature 05,TC-05,verify user can apply a discount code ,"- Open a web browser 
+- visit chowdeck.com 
+- click on the store link ( the cart icon) or navigate to chowdeck.com/store 
+- click on the profile icon 
+- click on the sign in button 
+- enter valid login credentials ( or sign up if not registered ) 
+- click on a restaurant to show available food menu 
+- click on a food item to select 
+- click ""add item to my order button"" 
+- choose payment method 
+- click promo code 
+- input promo code then click ""redeem"" button
+- click on apply promo 
+ ","chowdeck.com 
+chowdeck.com/store  
+phone number : 08072456688 
+restaurant : chicken republic
+food item : express combo 
+discount code ; DECK11 ",The total price should be reduced based on the discount code ,The total price of the order was reduced after i applied the promo code ,Passed,Passed,Passed,none ,Onagoruwa Enitan ,13/02/2029
+food ordering feature 06 ,TC-06,verify order summary displays correct details ,"- Open a web browser 
+- visit chowdeck.com 
+- click on the store link ( the cart icon) or navigate to chowdeck.com/store 
+- click on the profile icon 
+- click on the sign in button 
+- enter valid login credentials ( or sign up if not registered ) 
+- click on a restaurant to show available food menu 
+- click on a food item to select 
+- click ""add item to my order button"" 
+- view the order summary before clicking place order ","chowdeck.com 
+chowdeck.com/store   
+phone number : 08072456688 
+restaurant : chicken republic
+food item : express combo 
+","The order summary should display the correct item names, quantities, prices and total amount ","The order summary displayed(correct item names , quantities,prices  sub total , delivery fee, service fee , total amount)  ",Passed,Passed,Passed,none ,Onagoruwa Enitan ,13/02/2030
+food ordering feature 07 ,TC-07,verify order cancellation before processing ,"- Open a web browser 
+- visit chowdeck.com 
+- click on the store link ( the cart icon) or navigate to chowdeck.com/store 
+- click on the profile icon 
+- click on the sign in button 
+- enter valid login credentials ( or sign up if not registered ) 
+- click on a restaurant to show available food menu 
+- click on a food item to select 
+- click ""add item to my order button"" 
+- choose payment method 
+- input delivery address
+- click on ""place order button "" 
+- No button for "" order cancellation "" after order has been placed ","chowdeck.com 
+chowdeck.com/store 
+phone number : 08072456688 
+restaurant : chicken republic
+food item : express combo 
+delivery address : acemall oluyole 
+payment method : bank transfer ","If the ""cancel order "" button is clicked , order should be canceled successfully ","There is no "" order cancellation button "" after the "" Place order"" button has been clicked ",Failed,Failed,Failed,No order cancellation button ,Onagoruwa Enitan ,13/02/2031
+food ordering feature 08 ,TC-08,verify estimated delivery time is displayed ,"- Open a web browser 
+- visit chowdeck.com 
+- click on the store link ( the cart icon) or navigate to chowdeck.com/store 
+- click on the profile icon 
+- click on the sign in button 
+- enter valid login credentials ( or sign up if not registered ) 
+- click on a restaurant to show available food menu 
+- click on a food item to select 
+- click ""add item to my order button"" 
+- choose payment method 
+- input delivery address
+- click on ""place order button "" ","chowdeck.com 
+chowdeck.com/store 
+phone number : 08072456688 
+restaurant : chicken republic
+food item : express combo 
+delivery address : acemall oluyole 
+payment method : bank transfer ",The estimated delivery time should be displayed clearly ,The estimated delivery time is displayed on the screen after the order has been placed ,Passed,Passed,Passed,none ,Onagoruwa Enitan ,13/02/2032
+food ordering feature 09 ,TC-09,verify phone  confirmation is sent after an order ,"- Open a web browser 
+- visit chowdeck.com 
+- click on the store link ( the cart icon) or navigate to chowdeck.com/store 
+- click on the profile icon 
+- click on the sign in button 
+- enter valid login credentials ( or sign up if not registered ) 
+- click on a restaurant to show available food menu 
+- click on a food item to select 
+- click ""add item to my order button"" 
+- choose payment method 
+- input delivery address
+- click on ""place order button "" ","chowdeck.com 
+chowdeck.com/store 
+phone number : 08072456688 
+restaurant : chicken republic
+food item : express combo 
+delivery address : acemall oluyole 
+payment method : bank transfer ",The user should receive an order confirmation message with details ,"After payment and order confirmation , i recieved an order confirmation message with details 
+delivery details and a delivery code . ",Passed,Passed,Passed,none ,Onagoruwa Enitan ,13/02/2033
+food ordering feature 10 ,TC-10,Verify users can pick delivery or pick up option,"- Open a web browser 
+- visit chowdeck.com 
+- click on the store link ( the cart icon) or navigate to chowdeck.com/store 
+- click on the profile icon 
+- click on the sign in button 
+- enter valid login credentials ( or sign up if not registered ) 
+- click on a restaurant to show available food menu 
+","chowdeck.com 
+chowdeck.com/store 
+phone number : 08072456688 
+restaurant : chicken republic
+ ",The page shouldshow an option for delivery or pick up ,"After the restaurant has been picked , thers an option for delivery or pick up.",Passed,Passed,Passed,none ,Onagoruwa Enitan ,13/02/2034
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+"Test case for "" track food delivery feature "" on chowdeck ",,,, Google Chrome ,,Safari,,Microsoft Edge,,,Criteria,
+,,,,Total Test cases ,10,Total Test cases,10,Total Test cases ,10,,Passed,
+,,,,Total Passed ,8,Total Passed ,8,Total Passed ,8,,Failed,
+,,,,Total Failed ,2,Total Failed ,2,Total Failed ,2,,Untested,
+,,,,Total Untested ,0,Total Untested ,0,Total Untested ,0,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,Status ,,,,,
+Test suite ID,Test case ID ,Test description ,Test steps ,Test data ,Expected result ,Actual result ,Google chrome ( PC ),Safari,Microsoft Edge ,Comment ,Author ,Date created 
+feature name : track food delivery feature ,,,,,,,,,,,,
+track food delivery feature 01 ,TC-01,Verify user can track an active order ,"""- Open a web browser 
+- visit chowdeck.com 
+- click on the store link ( the cart icon) or navigate to chowdeck.com/store  
+- click on the profile icon 
+- click on the sign in button 
+- enter valid login credentials ( or sign up if not registered ) 
+- click on a restaurant to show available food menu 
+- click on a food item to select 
+- click """"add item to my order button"""" 
+- choose payment method 
+- input delivery address
+- click on """"place order button ""
+- click on orders 
+- select an active order 
+","chowdeck.com 
+chowdeck.com/store 
+phone number : 08072456688 
+restaurant : chicken republic
+food item : express combo 
+delivery address : acemall oluyole 
+payment method : bank transfer ",The system should display real time tracking information for the order ,"The system shows realtime order timeline 
+It displays fromwhen the order was received ,the preparation time , delivery receipient time and so on ",Passed,Passed,Passed,None ,Onagoruwa Enitan ,13/02/2025 
+track food delivery feature 02 ,TC-02,verify tracking updates when order status changes ,"""- Open a web browser 
+- visit chowdeck.com 
+- click on the store link ( the cart icon) or navigate to chowdeck.com/store  
+- click on the profile icon 
+- click on the sign in button 
+- enter valid login credentials ( or sign up if not registered ) 
+- click on a restaurant to show available food menu 
+- click on a food item to select 
+- click """"add item to my order button"""" 
+- choose payment method 
+- input delivery address
+- click on """"place order button ""
+- click on orders 
+- select an active order 
+- Wait for the order status to change ","chowdeck.com 
+chowdeck.com/store 
+phone number : 08072456688 
+restaurant : chicken republic
+food item : express combo 
+delivery address : acemall oluyole 
+payment method : bank transfer ",The tracking page should update with the new order status ,"The tracking page actively updated after the delivery status changed from "" rider accepted order to "" rider is at the vendor "" ",Passed,Passed,Passed,None ,Onagoruwa Enitan ,13/02/2026
+track food delivery feature 03 ,TC-03,verify user receives notification for order status updates ,"""- Open a web browser 
+- visit chowdeck.com 
+- click on the store link ( the cart icon) or navigate to chowdeck.com/store  
+- click on the profile icon 
+- click on the sign in button 
+- enter valid login credentials ( or sign up if not registered ) 
+- click on a restaurant to show available food menu 
+- click on a food item to select 
+- click """"add item to my order button"""" 
+- choose payment method 
+- input delivery address
+- click on """"place order button ""
+- click on orders 
+- select an active order 
+- Wait for the order status to change 
+- check if notification is received ","chowdeck.com 
+chowdeck.com/store 
+phone number : 08072456688 
+restaurant : chicken republic
+food item : express combo 
+delivery address : acemall oluyole 
+payment method : bank transfer ",User should receive a notification when the order sstatus changes,There was a push notification when order status changed ,Passed,Passed,Passed,None ,Onagoruwa Enitan ,13/02/2027
+track food delivery feature 04 ,TC-04,verify estimated delivery time is displayed ,"""- Open a web browser 
+- visit chowdeck.com 
+- click on the store link ( the cart icon) or navigate to chowdeck.com/store  
+- click on the profile icon 
+- click on the sign in button 
+- enter valid login credentials ( or sign up if not registered ) 
+- click on a restaurant to show available food menu 
+- click on a food item to select 
+- click """"add item to my order button"""" 
+- choose payment method 
+- input delivery address
+- click on """"place order button ""
+- click on orders 
+- select an active order 
+- check the estimated delivery time displayed on the page ","chowdeck.com 
+chowdeck.com/store 
+phone number : 08072456688 
+restaurant : chicken republic
+food item : express combo 
+delivery address : acemall oluyole 
+payment method : bank transfer ",The system should display an estimated delivery time ,The system displayed an estimated time of delivery ,Passed,Passed,Passed,None ,Onagoruwa Enitan ,13/02/2028
+track food delivery feature 05 ,TC-05,verify order tracking page auto refreshes ,"""- Open a web browser 
+- visit chowdeck.com 
+- click on the store link ( the cart icon) or navigate to chowdeck.com/store  
+- click on the profile icon 
+- click on the sign in button 
+- enter valid login credentials ( or sign up if not registered ) 
+- click on a restaurant to show available food menu 
+- click on a food item to select 
+- click """"add item to my order button"""" 
+- choose payment method 
+- input delivery address
+- click on """"place order button ""
+- click on orders 
+- select an active order 
+- leave the tracking page open for a few minute 
+- observe if the order status updates withou manual refresh ","chowdeck.com 
+chowdeck.com/store 
+phone number : 08072456688 
+restaurant : chicken republic
+food item : express combo 
+delivery address : acemall oluyole 
+payment method : bank transfer ",The tracking page should auto refresh to show updated status ,The system did not auto refresh until it was manually refreshed ,Failed,Failed,Failed,There is no auto update feature on the tracking page ,Onagoruwa Enitan ,13/02/2029
+track food delivery feature 06 ,TC-06,verify user can contact the delivery rider from the tracking page ,"""- Open a web browser 
+- visit chowdeck.com 
+- click on the store link ( the cart icon) or navigate to chowdeck.com/store  
+- click on the profile icon 
+- click on the sign in button 
+- enter valid login credentials ( or sign up if not registered ) 
+- click on a restaurant to show available food menu 
+- click on a food item to select 
+- click """"add item to my order button"""" 
+- choose payment method 
+- input delivery address
+- click on """"place order button ""
+- click on orders 
+- select an active order 
+- click the contact rider button ","chowdeck.com 
+chowdeck.com/store 
+phone number : 08072456688 
+restaurant : chicken republic
+food item : express combo 
+delivery address : acemall oluyole 
+payment method : bank transfer ",The system should allow the user contact the delivery rider directly from the app,The system displays an option within the app to contact the rider directly through call or chat option,Passed,Passed,Passed,None ,Onagoruwa Enitan ,13/02/2030
+track food delivery feature 07 ,TC-07,verify delivery completion updates order status ,"""- Open a web browser 
+- visit chowdeck.com 
+- click on the store link ( the cart icon) or navigate to chowdeck.com/store  
+- click on the profile icon 
+- click on the sign in button 
+- enter valid login credentials ( or sign up if not registered ) 
+- click on a restaurant to show available food menu 
+- click on a food item to select 
+- click """"add item to my order button"""" 
+- choose payment method 
+- input delivery address
+- click on """"place order button ""
+- click on orders 
+- select an active order 
+- wait for the delivery rider to mark the order as delivered 
+- refresh the page manually and check the order status ","chowdeck.com 
+chowdeck.com/store 
+phone number : 08072456688 
+restaurant : chicken republic
+food item : express combo 
+delivery address : acemall oluyole 
+payment method : bank transfer ","The order status should change to 'order delivered "" ","After a manual refresh the order status changed to "" Order delivered"" ",Passed,Passed,Passed,None ,Onagoruwa Enitan ,13/02/2031
+track food delivery feature 08 ,TC-08,verify tracking page handles canceled orders ,"""- Open a web browser 
+- visit chowdeck.com 
+- click on the store link ( the cart icon) or navigate to chowdeck.com/store  
+- click on the profile icon 
+- click on the sign in button 
+- enter valid login credentials ( or sign up if not registered ) 
+- click on a restaurant to show available food menu 
+- click on a food item to select 
+- click """"add item to my order button"""" 
+- choose payment method 
+- input delivery address
+- click on """"place order button ""
+- click on orders 
+- select an active order 
+- check how the tracking page handles canceled orders on the page ","chowdeck.com 
+chowdeck.com/store 
+phone number : 08072456688 
+restaurant : chicken republic
+food item : express combo 
+delivery address : acemall oluyole 
+payment method : bank transfer ","The tracking page should show  a "" canceled "" status with details ",No cancellation option after payment has been made and order placed ,Failed,Failed,Failed,After payment has been made there is no feature for cancellation of order ,Onagoruwa Enitan ,13/02/2032
+track food delivery feature 09 ,TC-09,verify user cannot track an order if not signed in ,"""- Open a web browser 
+- visit chowdeck.com 
+- click on the store link ( the cart icon) or navigate to chowdeck.com/store 
+- click on orders without signing in  
+","chowdeck.com 
+chowdeck.com/store 
+phone number : 08072456688 
+restaurant : chicken republic
+food item : express combo 
+delivery address : acemall oluyole 
+payment method : bank transfer ",The system should prompt the user to sign in before tracking an order ,"The system displays a message "" you need to be logged in to access this feature """,Passed,Passed,Passed,None ,Onagoruwa Enitan ,13/02/2033
+track food delivery feature 10 ,TC-10,verify user can share delivery status with friend ,"""- Open a web browser 
+- visit chowdeck.com 
+- click on the store link ( the cart icon) or navigate to chowdeck.com/store  
+- click on the profile icon 
+- click on the sign in button 
+- enter valid login credentials ( or sign up if not registered ) 
+- click on a restaurant to show available food menu 
+- click on a food item to select 
+- click """"add item to my order button"""" 
+- choose payment method 
+- input delivery address
+- click on """"place order button ""
+- click on orders 
+- select an active order 
+- click on ""share delivery status "" 
+- share delivery status with friend ","chowdeck.com 
+chowdeck.com/store 
+phone number : 08072456688 
+restaurant : chicken republic
+food item : express combo 
+delivery address : acemall oluyole 
+payment method : bank transfer ","The selected friend should receive a notification with delivery status 
+The user should receive a confirmation message indicating that the delivery status has been shared successfully","The selected friend received a notifiction  with the delivery status 
+confirmation was also sent to me to inform me of the successful delivery status sharing ",Passed,Passed,Passed,None ,Onagoruwa Enitan ,13/02/2034
